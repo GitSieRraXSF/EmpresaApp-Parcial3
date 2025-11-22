@@ -5,6 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="182dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="156dp"
+        android:backgroundTint="@color/dark_orange"
+        android:fontFamily="@font/besley"
+        android:text="Cerrar Sesion"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
@@ -50,12 +66,13 @@
         android:id="@+id/button3"
         android:layout_width="182dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="240dp"
         android:backgroundTint="@color/dark_orange"
         android:fontFamily="@font/besley"
         android:text="Entrar al menu"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
