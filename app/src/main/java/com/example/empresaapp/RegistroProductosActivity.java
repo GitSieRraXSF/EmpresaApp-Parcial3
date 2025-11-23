@@ -1,6 +1,7 @@
 package com.example.empresaapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -69,6 +70,14 @@ public class RegistroProductosActivity extends AppCompatActivity {
                 listap.agregarAlFinal(ID1, Nombre, Precio1, Cantidad1, TipoV);
                 Toast.makeText(RegistroProductosActivity.this, "El producto se ha registrado exitosamente!", Toast.LENGTH_SHORT).show();
                 hideKeyboard();
+            }
+        });
+        Button button1 = findViewById(R.id.button18);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegistroProductosActivity.this, GaleriaProductosActivity.class);
+                startActivity(intent);
             }
         });
     }

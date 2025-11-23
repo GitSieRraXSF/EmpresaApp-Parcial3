@@ -6,6 +6,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+
 public class ListaProductos {
     private Productos cabeza;
     private Context context;
@@ -127,5 +129,14 @@ public class ListaProductos {
             actual = actual.Siguiente;
         }
         return count;
+    }
+    public ArrayList<Productos> obtenerTodosLosProductos() {
+        ArrayList<Productos> lista = new ArrayList<>();
+        Productos actual = cabeza;
+        while (actual != null) {
+            lista.add(actual);
+            actual = actual.Siguiente;
+        }
+        return lista;
     }
 }
