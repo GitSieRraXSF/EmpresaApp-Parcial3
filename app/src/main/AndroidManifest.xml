@@ -24,6 +24,7 @@
         <activity android:name=".ContactoActivity"/>
         <activity android:name=".RegistroProductosActivity"/>
         <activity android:name=".CalculoVentaActivity"/>
+        <activity android:name=".VideoActivity"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

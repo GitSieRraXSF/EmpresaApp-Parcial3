@@ -24,8 +24,7 @@ public class MenuActivity extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://www.youtube.com/shorts/96vA4rrblHU?feature=share";
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                Intent intent = new Intent(MenuActivity.this, VideoActivity.class);
                 startActivity(intent);
             }
         });
