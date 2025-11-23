@@ -33,7 +33,7 @@ public class MenuActivity extends AppCompatActivity {
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
+                Intent intent = new Intent(MenuActivity.this, InfoActivity.class);
                 startActivity(intent);
             }
         });
@@ -41,7 +41,7 @@ public class MenuActivity extends AppCompatActivity {
         button8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
+                Intent intent = new Intent(MenuActivity.this, ContactoActivity.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +49,7 @@ public class MenuActivity extends AppCompatActivity {
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
+                Intent intent = new Intent(MenuActivity.this, CalculoVentaActivity.class);
                 startActivity(intent);
             }
         });

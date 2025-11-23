@@ -11,7 +11,6 @@ public class ListaProductos {
     private Context context;
     private static final String PREF_NAME = "ProductosPrefs";
     private static final String KEY_PRODUCTOS = "lista_productos";
-
     public ListaProductos(Context context){
         this.context = context;
         this.cabeza = null;
@@ -128,27 +127,5 @@ public class ListaProductos {
             actual = actual.Siguiente;
         }
         return count;
-    }
-    // Método adicional para generar un ID único automáticamente
-    public int generarNuevoId() {
-        int maxId = 0;
-        Productos actual = cabeza;
-        while (actual != null) {
-            if (actual.id > maxId) {
-                maxId = actual.id;
-            }
-            actual = actual.Siguiente;
-        }
-        return maxId + 1;
-    }
-    public Productos buscarProductoPorNombre(String nombre) {
-        Productos actual = cabeza;
-        while (actual != null) {
-            if (actual.Nombre.equals(nombre)) {
-                return actual;
-            }
-            actual = actual.Siguiente;
-        }
-        return null;
     }
 }
