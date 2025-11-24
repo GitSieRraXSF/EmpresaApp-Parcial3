@@ -11,7 +11,7 @@ public class PresentacionActivity extends AppCompatActivity {
     private ImageView imageView;
     private int indice = 0;
     private final int[] images = {
-        R.drawable.trebol, R.drawable.iconoSP
+        R.drawable.trebol
     };
 
     @Override
