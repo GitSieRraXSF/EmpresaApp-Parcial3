@@ -10,9 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PresentacionActivity extends AppCompatActivity {
     private ImageView imageView;
     private int indice = 0;
-    private final int[] images = {
-        R.drawable.trebol
-    };
+    private final int[] images = {R.drawable.trebol};
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
